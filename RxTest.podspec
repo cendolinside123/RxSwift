@@ -57,6 +57,9 @@ func testMap() {
   s.framework    = 'XCTest'
 
   s.dependency 'RxSwift', '6.6.0'
+
+  s.resource_bundles = {"RxTest" => ["RxTest/PrivacyInfo.xcprivacy"]}
+
   s.swift_version = '5.1'
 
   s.pod_target_xcconfig = {
